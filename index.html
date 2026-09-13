@@ -1147,10 +1147,11 @@
   /* ---------- PULSANTE WHATSAPP ---------- */
   var PHONE_NUMBER = '+393472524364'; // formato internazionale, senza + o spazi
   var MESSAGE = 'Ciao! Vorrei informazioni su Casa Granlasco.';
+  var WA_URL = 'https://wa.me/' + encodeURIComponent(PHONE_NUMBER) + '?text=' + encodeURIComponent(MESSAGE);
 
   var btn = document.getElementById('whatsapp-btn');
   if (btn){
-    btn.href = 'https://wa.me/' + PHONE_NUMBER + '?text=' + encodeURIComponent(MESSAGE);
+    btn.href = WA_URL;
   }
 })();
 </script>
