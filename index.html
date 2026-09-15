@@ -553,6 +553,44 @@
     padding-top:24px;flex-wrap:wrap;gap:12px;
     font-size:0.82rem;color:#8b9184;
   }
+  .bitcoin-footer {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    gap: 10px;
+    width: 100%;
+    text-align: left;
+    font-size: 0.8rem;
+  }
+  .bitcoin-footer img {
+    display: block;
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+    flex: 0 0 auto;
+  }
+  .bitcoin-footer span,
+  .bitcoin-footer a {
+    display: block;
+    line-height: 1.2;
+    white-space: nowrap;
+  }
+  @media (max-width: 480px) {
+    .bitcoin-footer {
+      gap: 8px;
+      padding: 0 16px;
+    }
+
+    .bitcoin-footer img {
+      width: 20px;
+      height: 20px;
+    }
+
+    .bitcoin-footer span,
+    .bitcoin-footer a {
+      font-size: 0.8rem;
+    }
+  }  
 </style>
 </head>
 <body>
@@ -837,8 +875,11 @@
     </div>
     <div class="footer-bottom">
       <span>&copy; 2026 Casa Granlasco — San Vito Lo Capo</span>
-      <!--span>Contatti e social da aggiungere</span-->
     </div>
+    <div class="bitcoin-footer">
+      <img src="images/logobtc.jpg" alt="Bitcoin">
+      <span>Bitcoin friendly</span>
+    </div>    
   </div>
 </footer>
 
